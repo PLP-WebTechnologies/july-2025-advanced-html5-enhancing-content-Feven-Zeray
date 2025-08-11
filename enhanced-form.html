@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enhanced Form Assignment</title>
+</head>
+<body>
+  <header>
+    <h1>Enhanced HTML5 Content & Form</h1>
+  </header>
+
+  <main>
+    <!-- Lists -->
+    <section>
+      <h2>My Favorite Programming Languages</h2>
+      <ul>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C#</li>
+      </ul>
+    </section>
+
+    <!-- Table -->
+    <section>
+      <h2>Programming Language Popularity</h2>
+      <table border="1" summary="Popularity ranking of programming languages in 2025">
+        <caption>Top Programming Languages in 2025</caption>
+        <thead>
+          <tr>
+            <th>Rank</th>
+            <th>Language</th>
+            <th>Users (Millions)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>JavaScript</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Python</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Java</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Media -->
+    <section>
+      <h2> Video</h2>
+     <video controls width="400">
+  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg" />
+  Your browser does not support the video tag.
+</video>
+    </section>
+
+    <!-- Form -->
+    <section>
+      <h2>Registration Form</h2>
+      <form action="#" method="post" novalidate>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label for="fullname">Full Name:</label><br />
+          <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3" autocomplete="name" /><br /><br />
+
+          <label for="email">Email Address:</label><br />
+          <input type="email" id="email" name="email" placeholder="email@example.com" required autocomplete="email" /><br /><br />
+
+          <label for="phone">Phone Number:</label><br />
+          <input type="tel" id="phone" name="phone" placeholder="+251-9XXXXXXXX" pattern="^\+251-[0-9]{9}$" required /><br /><br />
+
+          <label for="birthdate">Date of Birth:</label><br />
+          <input type="date" id="birthdate" name="birthdate" required /><br /><br />
+
+          <label for="gender">Gender:</label><br />
+          <select id="gender" name="gender" required>
+            <option value="">Select</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+          </select><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Details</legend>
+
+          <label for="username">Username:</label><br />
+          <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="5" autocomplete="username" /><br /><br />
+
+          <label for="password">Password:</label><br />
+          <input type="password" id="password" name="password" placeholder="At least 8 characters" required minlength="8" /><br /><br />
+
+          <label for="confirm_password">Confirm Password:</label><br />
+          <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required minlength="8" /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferences</legend>
+
+          <label>
+            <input type="checkbox" name="newsletter" value="yes" />
+            Subscribe to newsletter
+          </label><br /><br />
+
+          <label for="color">Favorite Color:</label><br />
+          <input type="color" id="color" name="color" value="#0000ff" readonly /><br /><br />
+
+          <label for="bio">Short Bio:</label><br />
+          <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us something about yourself..." required></textarea><br /><br />
+        </fieldset>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Feven Zeray</p>
+  </footer>
+</body>
+</html>
